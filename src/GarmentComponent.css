@@ -1,0 +1,11 @@
+.garment.selected {
+    background-color: aquamarine;
+}
+
+.garment > img {
+    height: var(--h);
+    width: var(--w);
+    object-fit: none;
+    object-position: calc(-1 * var(--x)) calc(-1 * var(--y));
+    
+}
