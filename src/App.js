@@ -19,7 +19,7 @@ class App extends Component{
     getWardrobe(clothesOrigin, clothesDestination){
         let wardrobe = {};
         for(let garmentName in clothesOrigin){
-            if(garmentName !== "muneco"){
+            if(garmentName !== "strawman"){
                 if("x" in clothesOrigin[garmentName]){
                     wardrobe[garmentName] = new Garment(garmentName, wardrobe, clothesOrigin[garmentName], clothesDestination);
                 }
@@ -49,7 +49,7 @@ class App extends Component{
             <div className="app">
                 <CanvasComponent
                     wardrobe={this.state.wardrobe}
-                    strawman={new ImageCropping(merge.muneco)}
+                    strawman={new ImageCropping(merge.strawman)}
                 ></CanvasComponent>
                 <Wardrobe
                     wardrobe={this.state.wardrobe}

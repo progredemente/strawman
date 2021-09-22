@@ -45,16 +45,24 @@ class CanvasComponent extends Component{
     }
 
     drawWardrobe(wardrobe, context){
+        for(let garment of this.getClothes(wardrobe).sort((a, b) => a.order - b.order)){
+            this.drawImage(garment.origin, garment.destination, context);
+        }
+    }
+
+    getClothes(wardrobe){
+        let clothes = [];
         for(let garmentName in wardrobe) {
             if(wardrobe[garmentName] instanceof Garment ){
                 if(wardrobe[garmentName].selected){
-                    this.drawImage(wardrobe[garmentName].origin, wardrobe[garmentName].destination, context);
+                    clothes.push(wardrobe[garmentName]);
                 }
             }
             else {
-                this.drawWardrobe(wardrobe[garmentName], context);
+                clothes.push(...this.getClothes(wardrobe[garmentName]));
             }
         }
+        return clothes;
     }
 
     drawImage(origin, destination, context){
