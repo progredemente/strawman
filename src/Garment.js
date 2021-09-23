@@ -9,6 +9,7 @@ export default class Garment {
         this.origin = new ImageCropping(origin);
         this.destination = new ImageCropping(destination);
         this.order = destination.z;
+        this.thumbnail = new ImageCropping(origin.t)
     }
 
 }

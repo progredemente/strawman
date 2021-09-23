@@ -14,10 +14,10 @@ class GarmentComponent extends Component{
                 <img
                     src='./merge.png'
                     style={{
-                        "--x": `${this.props.garment.origin.x}px`,
-                        "--y": `${this.props.garment.origin.y}px`,
-                        "--w": `${this.props.garment.origin.w}px`,
-                        "--h": `${this.props.garment.origin.h}px`
+                        "--x": `${this.props.garment.thumbnail.x}px`,
+                        "--y": `${this.props.garment.thumbnail.y}px`,
+                        "--w": `${this.props.garment.thumbnail.w}px`,
+                        "--h": `${this.props.garment.thumbnail.h}px`
                     }}
                     alt={this.props.garment.name}
                 />
