@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import GarmentComponent from './GarmentComponent';
 import Garment from './Garment';
+import './WardrobeComponent.css'
 
-class Wardrobe extends Component{
+class WardrobeComponent extends Component{
 
     render() {
         return (
-            <div>
+            <div className="wardrobe">
                 {
                     Object.keys(this.props.wardrobe).map((garmentName, i) => {
                         if(this.props.wardrobe[garmentName] instanceof Garment){
@@ -24,11 +25,15 @@ class Wardrobe extends Component{
                                 <div
                                     key={i}
                                 >
-                                    {garmentName}
-                                    <Wardrobe
-                                        wardrobe={this.props.wardrobe[garmentName]}
-                                        selectGarment={this.props.selectGarment}
-                                    ></Wardrobe>
+                                    <div className="drawer-header">
+                                        {garmentName}
+                                    </div>
+                                    <div className="drawer-content">
+                                        <WardrobeComponent
+                                            wardrobe={this.props.wardrobe[garmentName]}
+                                            selectGarment={this.props.selectGarment}
+                                        ></WardrobeComponent>
+                                    </div>
                                 </div>
                             )
                         }
@@ -39,4 +44,4 @@ class Wardrobe extends Component{
     }
 }
 
-export default Wardrobe;
+export default WardrobeComponent;

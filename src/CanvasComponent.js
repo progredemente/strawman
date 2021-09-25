@@ -22,7 +22,6 @@ class CanvasComponent extends Component{
         this.drawCanvas();
     }
 
-
     render() {
         return (
             <div>
@@ -67,6 +66,17 @@ class CanvasComponent extends Component{
 
     drawImage(origin, destination, context){
         context.drawImage(this.img, origin.x, origin.y, origin.w, origin.h, destination.x, destination.y, destination.w, destination.h);
+    }
+
+    downloadImage(){
+        let link = document.createElement('a');
+        link.download = 'strawman.png';
+        let canvas = this.canvas.current;
+        canvas.toBlob((blob) => {
+            let url = URL.createObjectURL(blob);
+            link.href = url;
+            link.click();
+        })
     }
 }
 

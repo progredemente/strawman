@@ -21,7 +21,6 @@ class GarmentComponent extends Component{
                     }}
                     alt={this.props.garment.name}
                 />
-                {this.props.garment.name}
             </div>
         );
     }
