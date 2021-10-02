@@ -24,9 +24,7 @@ class CanvasComponent extends Component{
 
     render() {
         return (
-            <div>
-                <canvas ref={this.canvas} width={this.side / this.scaleFactor} height={this.side / this.scaleFactor}/>
-            </div>
+            <canvas ref={this.canvas} width={this.side / this.scaleFactor} height={this.side / this.scaleFactor}/>
         );
     }
 

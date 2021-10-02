@@ -1,4 +1,11 @@
 .wardrobe {
-    border: 1px solid black;
-    margin: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 247, 218);
+    overflow-y: auto;
+}
+
+.category > .content {
+    background-color: rgb(255, 229, 145);
+    padding: 10px;
 }

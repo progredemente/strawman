@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './GarmentComponent.css';
+import i18n from './i18n.json';
 
 class GarmentComponent extends Component{
 
@@ -19,8 +20,9 @@ class GarmentComponent extends Component{
                         "--w": `${this.props.garment.thumbnail.w}px`,
                         "--h": `${this.props.garment.thumbnail.h}px`
                     }}
-                    alt={this.props.garment.name}
+                    alt={i18n[this.props.garment.name][this.props.lang]}
                 />
+                <figcaption>{i18n[this.props.garment.name][this.props.lang]}</figcaption>
             </div>
         );
     }

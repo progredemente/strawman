@@ -1,0 +1,118 @@
+{
+    "hats": {
+        "en": "hats",
+        "es": "gorros"
+    },
+    "color": {
+        "en": "skin color",
+        "es": "tono de piel"
+    },
+    "glasses": {
+        "en": "glasses",
+        "es": "gafas"
+    },
+    "neck": {
+        "en": "neck",
+        "es": "cuello"
+    },
+    "bracelets": {
+        "en": "bracelets",
+        "es": "pulseras"
+    },
+    "badges": {
+        "en": "badges",
+        "es": "pines"
+    },
+    "spain": {
+        "en": "Spain",
+        "es": "España"
+    },
+    "2030": {
+        "en": "2030",
+        "es": "2030"
+    },
+    "illuminati": {
+        "en": "Illuminati",
+        "es": "Illuminati"
+    },
+    "yunque": {
+        "en": "El Yunque",
+        "es": "El Yunque"
+    },
+    "male": {
+        "en": "male",
+        "es": "hombre"
+    },
+    "prochoice": {
+        "en": "pro-choice bandana",
+        "es": "pañuelo abortero"
+    },
+    "prolife": {
+        "en": "pro-life bandana",
+        "es": "pañuelo provida"
+    },
+    "cross": {
+        "en": "cross necklace",
+        "es": "colgante con cruz"
+    },
+    "nose": {
+        "en": "glasses with nose",
+        "es": "gafas con nariz"
+    },
+    "monocle": {
+        "en": "monocle",
+        "es": "monóculo"
+    },
+    "green": {
+        "en": "green",
+        "es": "verde"
+    },
+    "white": {
+        "en": "white",
+        "es": "blanco"
+    },
+    "yellow": {
+        "en": "yellow",
+        "es": "amarillo"
+    },
+    "brown": {
+        "en": "brown",
+        "es": "marrón"
+    },
+    "morion": {
+        "en": "morion",
+        "es": "morrión"
+    },
+    "turban": {
+        "en": "turban",
+        "es": "turbante"
+    },
+    "sideburns": {
+        "en": "hat with sideburns",
+        "es": "gorro con patillas"
+    },
+    "commie": {
+        "en": "communist hat",
+        "es": "gorro comunista"
+    },
+    "top": {
+        "en": "top hat",
+        "es": "chistera"
+    },
+    "nazi": {
+        "en": "nazi hat",
+        "es": "gorra nazi"
+    },
+    "maga": {
+        "en": "MAGA hat",
+        "es": "gorra MAGA"
+    },
+    "tricornio": {
+        "en": "tricornio",
+        "es": "tricornio"
+    },
+    "montera": {
+        "en": "montera",
+        "es": "montera"
+    }
+}

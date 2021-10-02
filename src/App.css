@@ -1,5 +1,7 @@
 .app {
     display: flex;
+    align-content: stretch;
+    height: 100%;
 }
 
 .app > *:last-child {

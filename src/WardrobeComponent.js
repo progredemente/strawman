@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import './WardrobeComponent.css';
+import i18n from './i18n.json';
 import GarmentComponent from './GarmentComponent';
-import Garment from './Garment';
-import './WardrobeComponent.css'
 
 class WardrobeComponent extends Component{
 
@@ -9,34 +9,26 @@ class WardrobeComponent extends Component{
         return (
             <div className="wardrobe">
                 {
-                    Object.keys(this.props.wardrobe).map((garmentName, i) => {
-                        if(this.props.wardrobe[garmentName] instanceof Garment){
-                            return (
-                                <GarmentComponent
-                                    key={i}
-                                    wardrobeSection={this.props.wardrobe}
-                                    garment={this.props.wardrobe[garmentName]}
-                                    selectGarment={this.props.selectGarment}
-                                ></GarmentComponent>
-                            )
-                        }
-                        else {
-                            return (
-                                <div
-                                    key={i}
-                                >
-                                    <div className="drawer-header">
-                                        {garmentName}
-                                    </div>
-                                    <div className="drawer-content">
-                                        <WardrobeComponent
-                                            wardrobe={this.props.wardrobe[garmentName]}
-                                            selectGarment={this.props.selectGarment}
-                                        ></WardrobeComponent>
-                                    </div>
+                    Object.keys(this.props.wardrobe).map((category) => {
+                        return (
+                            <div className="category" key={category}>
+                                <span>{i18n[category][this.props.lang]}</span>
+                                <div className="content">
+                                    {
+                                        Object.keys(this.props.wardrobe[category]).map((garmentName) => {
+                                            return (
+                                                <GarmentComponent
+                                                    key={garmentName}
+                                                    garment={this.props.wardrobe[category][garmentName]}
+                                                    selectGarment={this.props.selectGarment}
+                                                    lang={this.props.lang}
+                                                ></GarmentComponent>
+                                            );
+                                        })
+                                    }
                                 </div>
-                            )
-                        }
+                            </div>
+                        )
                     })
                 }
             </div>

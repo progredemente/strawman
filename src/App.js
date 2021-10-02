@@ -11,21 +11,33 @@ class App extends Component{
     
     constructor(props){
         super(props);
+        let lang = 'en'
+        try{
+            lang = navigator.language.toLowerCase().split('-')[0];
+        } catch(_){}
+        if(!['en', 'es'].includes(lang)){
+            lang = 'en';
+        }
         this.state = {
-            wardrobe: this.getWardrobe(merge, config)
+            wardrobe: this.getWardrobe(merge, config),
+            lang: lang
         }
         this.canvasRef = createRef();
     }
 
     getWardrobe(clothesOrigin, clothesDestination){
         let wardrobe = {};
-        for(let garmentName in clothesOrigin){
-            if(garmentName !== "strawman"){
-                if("x" in clothesOrigin[garmentName]){
-                    wardrobe[garmentName] = new Garment(garmentName, wardrobe, clothesOrigin[garmentName], clothesDestination);
-                }
-                else {
-                    wardrobe[garmentName] = this.getWardrobe(clothesOrigin[garmentName],clothesDestination[garmentName]);
+        for(let categoryName in clothesOrigin){
+            if(categoryName !== "strawman"){
+                wardrobe[categoryName] = {};
+                for(let garmentName in clothesOrigin[categoryName]) {
+                    console.log(garmentName);
+                    wardrobe[categoryName][garmentName] = new Garment(
+                        garmentName,
+                        wardrobe[categoryName],
+                        clothesOrigin[categoryName][garmentName],
+                        clothesDestination[categoryName]
+                    );
                 }
             }
         }
@@ -34,8 +46,8 @@ class App extends Component{
 
     selectGarment = (selectedGarment) => {
         if(!selectedGarment.selected){
-            for(let garmentName in selectedGarment.wardrobeSection){
-                let garment = selectedGarment.wardrobeSection[garmentName];
+            for(let garmentName in selectedGarment.category){
+                let garment = selectedGarment.category[garmentName];
                 if(garment !== selectedGarment){
                     garment.selected = false;
                 }
@@ -61,6 +73,7 @@ class App extends Component{
                 <WardrobeComponent
                     wardrobe={this.state.wardrobe}
                     selectGarment={this.selectGarment}
+                    lang={this.state.lang}
                 ></WardrobeComponent>
             </div>
         );
