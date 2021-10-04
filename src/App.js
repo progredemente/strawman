@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import CanvasComponent from './CanvasComponent';
 import WardrobeComponent from './WardrobeComponent';
@@ -22,7 +22,6 @@ class App extends Component{
             wardrobe: this.getWardrobe(merge, config),
             lang: lang
         }
-        this.canvasRef = createRef();
     }
 
     getWardrobe(clothesOrigin, clothesDestination){
@@ -60,16 +59,11 @@ class App extends Component{
     render() {
         return (
             <div className="app">
-                <div>
-                    <CanvasComponent
-                        wardrobe={this.state.wardrobe}
-                        strawman={new ImageCropping(merge.strawman)}
-                        ref={this.canvasRef}
-                    ></CanvasComponent>
-                    <button onClick={() => {
-                        this.canvasRef.current.downloadImage();
-                    }}>Download</button>
-                </div>
+                <CanvasComponent
+                    wardrobe={this.state.wardrobe}
+                    strawman={new ImageCropping(merge.strawman)}
+                    lang={this.state.lang}
+                ></CanvasComponent>
                 <WardrobeComponent
                     wardrobe={this.state.wardrobe}
                     selectGarment={this.selectGarment}

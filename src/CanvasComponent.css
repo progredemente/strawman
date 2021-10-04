@@ -1,0 +1,18 @@
+.canvas-component {
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas-component > canvas {
+    margin: 0 auto;
+}
+
+.download {
+    font-size: 2em;
+    background-color: green;
+    border: 0;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}

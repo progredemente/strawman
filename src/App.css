@@ -7,3 +7,10 @@
 .app > *:last-child {
     flex-grow: 1;
 }
+
+@media all and (max-width: 1500px){
+    .app {
+        display: initial;
+        height: initial;
+    }
+}

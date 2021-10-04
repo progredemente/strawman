@@ -8,4 +8,10 @@
 .category > .content {
     background-color: rgb(255, 229, 145);
     padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.category:not(:last-child) {
+    margin-bottom: 10px;
 }

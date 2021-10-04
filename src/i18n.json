@@ -1,4 +1,12 @@
 {
+    "strawman": {
+        "en": "straw man",
+        "es": "hombre de paja"
+    },
+    "download": {
+        "en": "download",
+        "es": "descargar"
+    },
     "hats": {
         "en": "hats",
         "es": "gorros"
