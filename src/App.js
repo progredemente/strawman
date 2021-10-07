@@ -6,12 +6,13 @@ import merge from './merge.json';
 import config from './config.json';
 import Garment from './Garment';
 import ImageCropping from './ImageCropping';
+import i18n from './i18n.json';
 
 class App extends Component{
     
     constructor(props){
         super(props);
-        let lang = 'en'
+        let lang;
         try{
             lang = navigator.language.toLowerCase().split('-')[0];
         } catch(_){}
@@ -20,7 +21,16 @@ class App extends Component{
         }
         this.state = {
             wardrobe: this.getWardrobe(merge, config),
-            lang: lang
+            lang: lang,
+            loaded: false
+        }
+    }
+
+    componentDidMount() {
+        this.img = new Image();
+        this.img.src = './merge.png';
+        this.img.onload = () => {
+            this.setState({ loaded: true });
         }
     }
 
@@ -30,7 +40,6 @@ class App extends Component{
             if(categoryName !== "strawman"){
                 wardrobe[categoryName] = {};
                 for(let garmentName in clothesOrigin[categoryName]) {
-                    console.log(garmentName);
                     wardrobe[categoryName][garmentName] = new Garment(
                         garmentName,
                         wardrobe[categoryName],
@@ -58,18 +67,31 @@ class App extends Component{
 
     render() {
         return (
-            <div className="app">
-                <CanvasComponent
-                    wardrobe={this.state.wardrobe}
-                    strawman={new ImageCropping(merge.strawman)}
-                    lang={this.state.lang}
-                ></CanvasComponent>
-                <WardrobeComponent
-                    wardrobe={this.state.wardrobe}
-                    selectGarment={this.selectGarment}
-                    lang={this.state.lang}
-                ></WardrobeComponent>
-            </div>
+            <>
+            {
+                this.state.loaded &&
+                <div className="app">
+                    <CanvasComponent
+                        wardrobe={this.state.wardrobe}
+                        strawman={new ImageCropping(merge.strawman)}
+                        lang={this.state.lang}
+                        img={this.img}
+                    />
+                    <WardrobeComponent
+                        wardrobe={this.state.wardrobe}
+                        selectGarment={this.selectGarment}
+                        lang={this.state.lang}
+                    />
+                </div>
+                }
+                {
+                    !this.state.loaded &&
+                    <div className="loading">
+                        <img src="./favicon.png" alt={i18n["loading"][this.state.lang]} />
+                        {i18n["loading"][this.state.lang]}
+                    </div>
+                }
+            </>
         );
     }
 }

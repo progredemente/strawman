@@ -1,17 +1,29 @@
 .wardrobe {
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(255, 247, 218);
+    padding: 0 10px 10px 10px;
+    background-color: var(--primary-color);
     overflow-y: auto;
+    position: relative;
 }
 
 .category > .content {
-    background-color: rgb(255, 229, 145);
+    background-color: var(--secondary-color);
     padding: 10px;
     overflow-x: auto;
     white-space: nowrap;
+    border-radius: var(--border-radius);
 }
 
 .category:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.wardrobe h1 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5em;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
 }

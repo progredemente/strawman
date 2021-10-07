@@ -9,9 +9,7 @@ class CanvasComponent extends Component{
         super(props);
         this.side = this.props.strawman.h;
         this.canvas = createRef();
-        this.img = new Image();
-        this.img.src = "./merge.png";
-        this.maxScaleFactor = 1.25;
+        this.maxScaleFactor = 0.7;
         this.state = {
             scaleFactor: this.getScaleFactor()
         }
@@ -21,9 +19,7 @@ class CanvasComponent extends Component{
         window.addEventListener("resize", () => {
             this.setState({scaleFactor: this.getScaleFactor()});
         })
-        this.img.onload = () => {
-            this.drawCanvas();
-        }
+        this.drawCanvas();
     }
 
     componentDidUpdate() {
@@ -33,11 +29,14 @@ class CanvasComponent extends Component{
     render() {
         return (
             <div className="canvas-component">
-                <h1>{i18n["strawman"][this.props.lang]}</h1>
-                <canvas ref={this.canvas} width={this.side / this.state.scaleFactor} height={this.side / this.state.scaleFactor}/>
+                <h1>
+                    <div>{i18n["make"][this.props.lang].capitalize()}</div>
+                    <div>{i18n["strawman"][this.props.lang].toUpperCase()}</div>
+                </h1>
+                <canvas ref={this.canvas} width={this.side * this.state.scaleFactor} height={this.side * this.state.scaleFactor}/>
                 <div className="download" onClick={() => {
                     this.downloadImage();
-                }}>{i18n["download"][this.props.lang]}</div>
+                }}>{i18n["download"][this.props.lang].capitalize()}</div>
             </div>
         );
     }
@@ -46,8 +45,8 @@ class CanvasComponent extends Component{
         let tempCanvas = this.getTempCanvas();
 
         let realContext = this.canvas.current.getContext("2d");
-        realContext.clearRect(0, 0, this.side / this.state.scaleFactor, this.side / this.state.scaleFactor);
-        realContext.drawImage(tempCanvas, 0, 0, this.side / this.state.scaleFactor, this.side / this.state.scaleFactor);
+        realContext.clearRect(0, 0, this.side * this.state.scaleFactor, this.side * this.state.scaleFactor);
+        realContext.drawImage(tempCanvas, 0, 0, this.side * this.state.scaleFactor, this.side * this.state.scaleFactor);
     }
 
     getTempCanvas() {
@@ -82,7 +81,7 @@ class CanvasComponent extends Component{
     }
 
     drawImage(origin, destination, context){
-        context.drawImage(this.img, origin.x, origin.y, origin.w, origin.h, destination.x, destination.y, destination.w, destination.h);
+        context.drawImage(this.props.img, origin.x, origin.y, origin.w, origin.h, destination.x, destination.y, destination.w, destination.h);
     }
 
     downloadImage(){
@@ -97,8 +96,8 @@ class CanvasComponent extends Component{
     }
 
     getScaleFactor(){
-        if(window.innerWidth < this.side / this.maxScaleFactor){
-            return this.side / window.innerWidth;
+        if(window.innerWidth < this.side * this.maxScaleFactor){
+            return window.innerWidth / this.side;
         }
         return this.maxScaleFactor;
     }

@@ -10,6 +10,15 @@ html, body, #root {
 * {
   font-family: ComicTypo;
   box-sizing: border-box;
+  --border-radius: 10px;
+  --primary-color: #FFF59F;
+  --secondary-color: #e3d76b;
+  --background-color: #FFF9C7;
+  --highlight-color: #9A8D1F;
+}
+
+html {
+  background-color: var(--background-color);
 }
 
 body {

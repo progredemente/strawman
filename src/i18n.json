@@ -1,4 +1,12 @@
 {
+    "loading": {
+        "en": "loading",
+        "es": "cargando"
+    },
+    "make": {
+        "en": "make your own",
+        "es": "crea tu propio"
+    },
     "strawman": {
         "en": "straw man",
         "es": "hombre de paja"
@@ -6,6 +14,10 @@
     "download": {
         "en": "download",
         "es": "descargar"
+    },
+    "accessories": {
+        "en": "accessories",
+        "es": "accesorios"
     },
     "hats": {
         "en": "hats",

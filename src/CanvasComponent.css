@@ -1,18 +1,31 @@
 .canvas-component {
     display: flex;
     flex-direction: column;
-}
-
-.canvas-component > canvas {
-    margin: 0 auto;
+    align-items: center;
 }
 
 .download {
     font-size: 2em;
-    background-color: green;
+    background-color: var(--highlight-color);
     border: 0;
-    color: white;
+    color: var(--background-color);
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: center;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.canvas-component h1 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.canvas-component h1 > :first-child {
+    font-size: 1em;
+}
+
+.canvas-component h1 > :last-child {
+    font-size: 2em;
+    font-weight: bold;
 }

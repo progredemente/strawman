@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// eslint-disable-next-line no-extend-native
+String.prototype.capitalize = function() {
+  return this[0].toUpperCase() + this.substr(1, this.length);
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

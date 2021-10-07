@@ -8,11 +8,12 @@ class WardrobeComponent extends Component{
     render() {
         return (
             <div className="wardrobe">
+                <h1>{i18n['accessories'][this.props.lang].capitalize()}</h1>
                 {
                     Object.keys(this.props.wardrobe).map((category) => {
                         return (
                             <div className="category" key={category}>
-                                <span>{i18n[category][this.props.lang]}</span>
+                                <span>{i18n[category][this.props.lang].capitalize()}</span>
                                 <div className="content">
                                     {
                                         Object.keys(this.props.wardrobe[category]).map((garmentName) => {

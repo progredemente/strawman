@@ -1,5 +1,5 @@
 .garment.selected {
-    background-color: aquamarine;
+    background-color: var(--primary-color);
 }
 
 .garment > img {
@@ -15,5 +15,6 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
 }
