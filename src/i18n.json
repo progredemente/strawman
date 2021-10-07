@@ -19,9 +19,9 @@
         "en": "accessories",
         "es": "accesorios"
     },
-    "hats": {
-        "en": "hats",
-        "es": "gorros"
+    "head": {
+        "en": "head",
+        "es": "cabeza"
     },
     "color": {
         "en": "skin color",
@@ -134,5 +134,13 @@
     "montera": {
         "en": "montera",
         "es": "montera"
+    },
+    "pink_hair": {
+        "en": "pink hair",
+        "es": "pelo rosa"
+    },
+    "keffiyeh": {
+        "en": "Palestinian keffiyeh",
+        "es": "palestina"
     }
 }
