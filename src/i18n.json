@@ -43,6 +43,10 @@
         "en": "badges",
         "es": "pines"
     },
+    "hand": {
+        "en": "hand",
+        "es": "mano"
+    },
     "spain": {
         "en": "Spain",
         "es": "España"
@@ -142,5 +146,17 @@
     "keffiyeh": {
         "en": "Palestinian keffiyeh",
         "es": "palestina"
+    },
+    "flute": {
+        "en": "flute",
+        "es": "flauta"
+    },
+    "dildo": {
+        "en": "dildo",
+        "es": "consolador"
+    },
+    "gun": {
+        "en": "gun",
+        "es": "pistola"
     }
 }
