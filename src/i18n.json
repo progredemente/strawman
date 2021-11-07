@@ -47,6 +47,10 @@
         "en": "hand",
         "es": "mano"
     },
+    "chest": {
+        "en": "chest",
+        "es": "pecho"
+    },
     "spain": {
         "en": "Spain",
         "es": "España"
@@ -158,5 +162,9 @@
     "gun": {
         "en": "gun",
         "es": "pistola"
+    },
+    "blue_shirt": {
+        "en": "blue shirt",
+        "es": "camisa azul"
     }
 }
