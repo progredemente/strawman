@@ -55,6 +55,10 @@
         "en": "Spain",
         "es": "España"
     },
+    "lgbt": {
+        "en": "LGBTIQ+",
+        "es": "LGBTIQ+"
+    },
     "2030": {
         "en": "2030",
         "es": "2030"
@@ -70,6 +74,10 @@
     "male": {
         "en": "male",
         "es": "hombre"
+    },
+    "red_triangle": {
+        "en": "red triangle",
+        "es": "triángulo rojo"
     },
     "prochoice": {
         "en": "pro-choice bandana",
@@ -151,6 +159,10 @@
         "en": "Palestinian keffiyeh",
         "es": "palestina"
     },
+    "tinfoil": {
+        "en": "tinfoil",
+        "es": "papel de aluminio"
+    },
     "flute": {
         "en": "flute",
         "es": "flauta"
@@ -166,5 +178,9 @@
     "blue_shirt": {
         "en": "blue shirt",
         "es": "camisa azul"
+    },
+    "lumberjack": {
+        "en": "lumberjack shirt",
+        "es": "camisa leñador"
     }
 }
