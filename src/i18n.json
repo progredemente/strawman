@@ -190,5 +190,13 @@
     "lumberjack": {
         "en": "lumberjack shirt",
         "es": "camisa leñador"
+    },
+    "blm": {
+        "en": "BLM T-shirt",
+        "es": "camiseta BLM"
+    },
+    "gadsden": {
+        "en": "Gadsden T-shirt",
+        "es": "camiseta Gadsden"
     }
 }
