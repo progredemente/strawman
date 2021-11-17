@@ -51,6 +51,10 @@
         "en": "chest",
         "es": "pecho"
     },
+    "mouth": {
+        "en": "mouth",
+        "es": "boca"
+    },
     "spain": {
         "en": "Spain",
         "es": "España"
@@ -198,5 +202,13 @@
     "gadsden": {
         "en": "Gadsden T-shirt",
         "es": "camiseta Gadsden"
+    },
+    "chaplin": {
+        "en": "Chaplin moustache",
+        "es": "bigote de Chaplin"
+    },
+    "beard": {
+        "en": "beard",
+        "es": "barba"
     }
 }
