@@ -7,6 +7,14 @@
         "en": "make your own",
         "es": "crea tu propio"
     },
+    "by": {
+        "en": "by",
+        "es": "por"
+    },
+    "make_at": {
+        "en": "make your own at",
+        "es": "crea el tuyo propio en"
+    },
     "strawman": {
         "en": "straw man",
         "es": "hombre de paja"

@@ -32,6 +32,7 @@ class CanvasComponent extends Component{
                 <h1>
                     <div>{i18n["make"][this.props.lang].capitalize()}</div>
                     <div>{i18n["strawman"][this.props.lang].toUpperCase()}</div>
+                    <div>{i18n["by"][this.props.lang]} <a href="/" target="_blank">progredemente</a></div>
                 </h1>
                 <canvas ref={this.canvas} width={this.side * this.state.scaleFactor} height={this.side * this.state.scaleFactor}/>
                 <div className="download" onClick={() => {
@@ -56,6 +57,7 @@ class CanvasComponent extends Component{
         let tempContext = tempCanvas.getContext("2d");
         this.drawImage(this.props.strawman, this.props.strawman, tempContext);
         this.drawWardrobe(this.props.wardrobe, tempContext);
+        this.drawUrl(tempContext);
         return tempCanvas;
     }
 
@@ -82,6 +84,14 @@ class CanvasComponent extends Component{
 
     drawImage(origin, destination, context){
         context.drawImage(this.props.img, origin.x, origin.y, origin.w, origin.h, destination.x, destination.y, destination.w, destination.h);
+    }
+
+    drawUrl(context) {
+        context.font = "40px ComicTypo";
+        context.textAlign = "center"
+        context.globalAlpha = .25;
+        context.fillText(i18n["make_at"][this.props.lang].capitalize(), this.side / 2, this.side - 60)
+        context.fillText("https://progredemente.com/strawman", this.side / 2 , this.side - 20);
     }
 
     downloadImage(){

@@ -5,7 +5,7 @@
 }
 
 .download {
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: var(--highlight-color);
     border: 0;
     color: var(--background-color);
@@ -21,11 +21,15 @@
     font-weight: normal;
 }
 
-.canvas-component h1 > :first-child {
-    font-size: 1em;
+.canvas-component h1 > :nth-child(2) {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .canvas-component h1 > :last-child {
-    font-size: 2em;
-    font-weight: bold;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
 }
