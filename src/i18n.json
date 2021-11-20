@@ -179,6 +179,10 @@
         "en": "Palestinian keffiyeh",
         "es": "palestina"
     },
+    "sweater": {
+        "en": "sweater",
+        "es": "jersey"
+    },
     "tinfoil": {
         "en": "tinfoil",
         "es": "papel de aluminio"
@@ -210,6 +214,10 @@
     "gadsden": {
         "en": "Gadsden T-shirt",
         "es": "camiseta Gadsden"
+    },
+    "polo": {
+        "en": "polo shirt",
+        "es": "polo"
     },
     "chaplin": {
         "en": "Chaplin moustache",

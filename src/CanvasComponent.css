@@ -28,6 +28,7 @@
 
 .canvas-component h1 > :last-child {
     text-align: right;
+    font-size: .75em;
 }
 
 a {
