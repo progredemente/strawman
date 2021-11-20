@@ -91,6 +91,14 @@
         "en": "red triangle",
         "es": "triángulo rojo"
     },
+    "red_ribbon": {
+        "en": "red ribbon",
+        "es": "lazo rojo"
+    },
+    "yellow_ribbon": {
+        "en": "yellow ribbon",
+        "es": "lazo amarillo"
+    },
     "prochoice": {
         "en": "pro-choice bandana",
         "es": "pañuelo abortero"
@@ -218,6 +226,14 @@
     "polo": {
         "en": "polo shirt",
         "es": "polo"
+    },
+    "vegan": {
+        "en": "vegan T-shirt",
+        "es": "camiseta vegana"
+    },
+    "feminism": {
+        "en": "feminist T-shirt",
+        "es": "camiseta feminista"
     },
     "chaplin": {
         "en": "Chaplin moustache",
