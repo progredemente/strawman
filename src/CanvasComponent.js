@@ -91,7 +91,8 @@ class CanvasComponent extends Component{
         context.textAlign = "center"
         context.globalAlpha = .25;
         context.fillText(i18n["make_at"][this.props.lang].capitalize(), this.side / 2, this.side - 60)
-        context.fillText("https://progredemente.com/strawman", this.side / 2 , this.side - 20);
+        context.globalAlpha = .5;
+        context.fillText("progredemente.com/strawman", this.side / 2 , this.side - 20);
     }
 
     downloadImage(){
