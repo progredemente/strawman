@@ -34,6 +34,14 @@ class App extends Component{
         }
     }
 
+    joinCategories(wardrobe, keep, del) {
+        wardrobe[keep] = { ...wardrobe[keep], ...wardrobe[del] };
+        delete wardrobe[del];
+        for(let garmentName in wardrobe[keep]){
+            wardrobe[keep][garmentName].category = wardrobe[keep];
+        }
+    }
+
     getWardrobe(clothesOrigin, clothesDestination){
         let wardrobe = {};
         for(let categoryName in clothesOrigin){
@@ -49,6 +57,8 @@ class App extends Component{
                 }
             }
         }
+        this.joinCategories(wardrobe, 'head', 'head2');
+        console.log(wardrobe);
         return wardrobe;
     }
 

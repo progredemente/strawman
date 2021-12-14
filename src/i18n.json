@@ -183,6 +183,10 @@
         "en": "horns",
         "es": "cuernos"
     },
+    "furry": {
+        "en": "furry mask",
+        "es": "mascara de furro"
+    },
     "keffiyeh": {
         "en": "Palestinian keffiyeh",
         "es": "palestina"
@@ -240,8 +244,8 @@
         "es": "camiseta feminista"
     },
     "bitcoin": {
-        "en": "camiseta de Bitcoin",
-        "es": "Bitcoin T-shirt"
+        "en": "Bitcoin T-shirt",
+        "es": "camiseta de Bitcoin"
     },
     "chaplin": {
         "en": "Chaplin moustache",
