@@ -115,6 +115,10 @@
         "en": "glasses with nose",
         "es": "gafas con nariz"
     },
+    "cat_eye": {
+        "en": "cat eye glasses",
+        "es": "gafas de ojo de gato"
+    },
     "monocle": {
         "en": "monocle",
         "es": "monóculo"
@@ -185,7 +189,7 @@
     },
     "furry": {
         "en": "furry mask",
-        "es": "mascara de furro"
+        "es": "máscara de furro"
     },
     "keffiyeh": {
         "en": "Palestinian keffiyeh",
