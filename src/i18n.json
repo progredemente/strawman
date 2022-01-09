@@ -255,8 +255,28 @@
         "en": "Chaplin moustache",
         "es": "bigote de Chaplin"
     },
-    "beard": {
-        "en": "beard",
-        "es": "barba"
+    "brown_beard": {
+        "en": "brown beard",
+        "es": "barba castaña"
+    },
+    "white_beard": {
+        "en": "white beard",
+        "es": "barba blanca"
+    },
+    "sam": {
+        "en": "Uncle Sam's hat",
+        "es": "Chistera del Tío Sam"
+    },
+    "cigar": {
+        "en": "cigar",
+        "es": "puro"
+    },
+    "burger": {
+        "en": "burger",
+        "es": "hamburguesa"
+    },
+    "baguette": {
+        "en": "baguette",
+        "es": "baguette"
     }
 }
