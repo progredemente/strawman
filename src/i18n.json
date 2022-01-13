@@ -298,5 +298,9 @@
     "weed": {
         "en": "weed T-shirt",
         "es": "camiseta maría"
+    },
+    "vest": {
+        "en": "bomb vest",
+        "es": "chaleco bomba"
     }
 }
