@@ -100,11 +100,11 @@
         "es": "lazo amarillo"
     },
     "prochoice": {
-        "en": "pro-choice bandana",
+        "en": "pro-choice kerchief",
         "es": "pañuelo abortero"
     },
     "prolife": {
-        "en": "pro-life bandana",
+        "en": "pro-life kerchief",
         "es": "pañuelo provida"
     },
     "cross": {
@@ -265,7 +265,7 @@
     },
     "sam": {
         "en": "Uncle Sam's hat",
-        "es": "Chistera del Tío Sam"
+        "es": "chistera del Tío Sam"
     },
     "cigar": {
         "en": "cigar",
@@ -278,5 +278,25 @@
     "baguette": {
         "en": "baguette",
         "es": "baguette"
+    },
+    "beret": {
+        "en": "beret",
+        "es": "boina"
+    },
+    "kerchief": {
+        "en": "kerchief",
+        "es": "pañuelo"
+    },
+    "joint": {
+        "en": "joint",
+        "es": "porro"
+    },
+    "striped": {
+        "en": "striped T-shirt",
+        "es": "camiseta de rayas"
+    },
+    "weed": {
+        "en": "weed T-shirt",
+        "es": "camiseta maría"
     }
 }
