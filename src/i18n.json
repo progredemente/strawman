@@ -302,5 +302,29 @@
     "vest": {
         "en": "bomb vest",
         "es": "chaleco bomba"
+    },
+    "dumbbell": {
+        "en": "dumbbell",
+        "es": "mancuerna"
+    },
+    "knife": {
+        "en": "knife",
+        "es": "navaja"
+    },
+    "sunglasses": {
+        "en": "sunglasses",
+        "es": "gafas de sol"
+    },
+    "trans": {
+        "en": "trans",
+        "es": "trans"
+    },
+    "psg": {
+        "en": "PSG hat",
+        "es": "gorra PSG"
+    },
+    "mask": {
+        "en": "mask",
+        "es": "mascarilla"
     }
 }
