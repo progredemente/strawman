@@ -326,5 +326,13 @@
     "mask": {
         "en": "mask",
         "es": "mascarilla"
+    },
+    "black_hair": {
+        "en": "black hair",
+        "es": "pelo negro"
+    },
+    "che": {
+        "en": "Che T-shirt",
+        "es": "camiseta del Che"
     }
 }
