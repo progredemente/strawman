@@ -7,6 +7,8 @@ import config from './config.json';
 import Garment from './Garment';
 import ImageCropping from './ImageCropping';
 import i18n from './i18n.json';
+import { AppsBar } from 'components/AppsBar';
+
 
 class App extends Component{
     
@@ -77,7 +79,7 @@ class App extends Component{
 
     render() {
         return (
-            <>
+            <AppsBar current="strawman">
             {
                 this.state.loaded &&
                 <div className="app">
@@ -101,7 +103,7 @@ class App extends Component{
                         {i18n["loading"][this.state.lang]}
                     </div>
                 }
-            </>
+            </AppsBar>
         );
     }
 }

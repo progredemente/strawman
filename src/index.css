@@ -24,3 +24,8 @@ body {
 canvas {
   display: block;
 }
+
+.apps-bar-container {
+  --apps-bar-primary-color: var(--highlight-color) !important;
+  --apps-bar-secondary-color: var(--secondary-color) !important;
+}
