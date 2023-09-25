@@ -3,7 +3,7 @@
     "name": "Straw man",
     "icons": [
       {
-        "src": "favicon.png",
+        "src": "https://progredemente.com/resources/camaleon.png",
         "type": "image/png",
         "sizes": "256x256"
       }

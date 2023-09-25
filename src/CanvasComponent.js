@@ -2,6 +2,7 @@ import React, { Component, createRef } from 'react';
 import './CanvasComponent.css';
 import Garment from './Garment';
 import i18n from './i18n';
+import { Icon } from 'components/Icon';
 
 class CanvasComponent extends Component{
 
@@ -37,7 +38,7 @@ class CanvasComponent extends Component{
                 <canvas ref={this.canvas} width={this.side * this.state.scaleFactor} height={this.side * this.state.scaleFactor}/>
                 <div className="download" onClick={() => {
                     this.downloadImage();
-                }}>{i18n["download"][this.props.lang].capitalize()}</div>
+                }}>{i18n["download"][this.props.lang].capitalize()}&nbsp;<Icon icon="D" /></div>
             </div>
         );
     }
