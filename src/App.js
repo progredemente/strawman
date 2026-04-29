@@ -99,7 +99,7 @@ class App extends Component{
                 {
                     !this.state.loaded &&
                     <div className="loading">
-                        <img src={`${process.env.RESOURCES_URL}/strawman.png`} alt={i18n["loading"][this.state.lang]} />
+                        <img src={`${process.env.MEDIA_URL}/resources/logos/strawman.png`} alt={i18n["loading"][this.state.lang]} />
                         {i18n["loading"][this.state.lang]}
                     </div>
                 }
